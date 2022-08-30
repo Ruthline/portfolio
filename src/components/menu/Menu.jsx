@@ -8,7 +8,6 @@ import {  faBars, faGraduationCap, faHammer, faIgloo, faLaptopCode} from '@forta
 function Menu() {
   return (
     <div>
-         <header>
             <nav>
                 <Link to="/portfolio" className='item'>
                 <img class="logo" src={Logo} alt="Logo Portfolio" /></Link>
@@ -40,7 +39,6 @@ function Menu() {
                     
                 </ul>
             </nav>
-        </header>
     </div>
   )
 }

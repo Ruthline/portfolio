@@ -1,19 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Manrope:wght@200&family=Secular+One&display=swap');
-/*font-family: 'Baloo 2', cursive;
-font-family: 'Manrope', sans-serif;
-font-family: 'Secular One', sans-serif;*/
-:root{
-    --pine-tree:#232314;
-    --silver-sand:#C3C8CD;
-    --iceberg:#7DABCB;
-    --olive-draf:#47432E;
-    --white:#FFFF;
-  }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 
 nav{
@@ -23,7 +8,6 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-family: 'Cabin', sans-serif;
     border-bottom: 2px solid var(--olive-draf);
 }
 

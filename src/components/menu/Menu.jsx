@@ -12,7 +12,7 @@ function Menu() {
             <nav>
                 <Link to="/portfolio" className='item'>
                 <img class="logo" src={Logo} alt="Logo Portfolio" /></Link>
-                <input type="checkbox" id="check" checked></input>
+                <input type="checkbox" id="check"></input>
                 <label for="check" className="checkbtn">
                 <FontAwesomeIcon icon={faBars} />
                 </label>

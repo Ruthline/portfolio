@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Manrope:wght@200&family=Secular+One&display=swap');
+/*font-family: 'Baloo 2', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Secular One', sans-serif;*/
 :root{
     --pine-tree:#232314;
     --silver-sand:#C3C8CD;
@@ -11,61 +15,21 @@
     box-sizing: border-box;
 }
 
-.dropbtn {
-    display: flex;
-    justify-content:center;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  .dropbtn:hover{
-    color: var(yellow);}
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: var(--dark-blue);
-    min-width: 180px;
-    height: 155px;
-    padding-top: 1rem;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    color: var(--yellow);
-    border-bottom:3px solid var(--yellow);
-    
-    }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  
 
 nav{
     background: var(--pine-tree);
-    height: 100vh;
-    width: 8%;
+    padding: 2rem;
+    height: 100px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-between;
     font-family: 'Cabin', sans-serif;
+    border-bottom: 2px solid var(--olive-draf);
 }
 
-.logo{position: relative;
-    right: 4px;
-    margin:2rem 0rem;
+.logo{
+    position: relative;
+    bottom: 10px;
     width: 60px;
     transition-duration:500ms;
 }
@@ -73,25 +37,28 @@ nav{
 nav ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 50%;
+    justify-content: space-evenly;
+    height: 31.7rem;
     width: 100%;
-    margin-top: 5rem;
 
 }
 
 nav ul li{
-    color:var(--yellow);
+    font-family: 'Secular One', sans-serif;
+    color:var(--silver-sand);
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
 }
 nav ul a{
     text-decoration: none;
+    
+}
+nav ul i{
+    margin: 0rem 1rem;
 }
 .item:hover{
-    color: var(--yellow);
+    color: var(--olive-draf);
 }
 .item{
     color: aliceblue;
@@ -107,7 +74,8 @@ li.active, li:hover{
 .checkbtn{
     color: #fff;
     cursor: pointer;
-    display: none;
+    display: flex;
+    font-size: 40px;
 }
 #check{
     display: none;
@@ -126,92 +94,78 @@ li.active, li:hover{
 0%, 16.6%, 33.33%, 100% { width: 0; }
 16.66%, 33.3% { width: auto; }
 }
+ul{
+    position: absolute;
+    width: 100%;
+    background-color: var(--pine-tree);
+    backdrop-filter: blur(5px);
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 10;
+    animation: desplegar 2s 1s backwards;
+}
 
+@keyframes desplegar {
+    0%{
+        border-bottom-right-radius: 100%;
+    }
+    100%{
+        border-bottom-right-radius: 0%;
+    }
+}
+
+nav ul li{
+    border: none;
+    width: 100%;
+}
+li a:hover, li a.active{
+    color: var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+}
+#check:checked ~ ul{
+    
+    left:0;
+}
 
 /* MEDIAS QUERIES */
-@media (max-width: 2000px){
-    nav ul li a{
-        font-size: 28px;
-    }
-
-    nav ul li{
-        list-style: none;
-    }
-    
-    nav ul li{
-        text-align: center;
-        color: #fff;
-        border-radius: 3px;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-}
-
-@media (max-width: 1285px){
-    nav ul li{
-        text-align: center;
-        color: #fff;
-        border-radius: 3px;
-        text-transform: uppercase;
-        text-decoration: none;
-        margin: 0;
-    }
-}
-
-@media (max-width: 1020px) and (min-width:300px){
+@media screen and (min-width:768px) {
     .checkbtn{
+        display: none;
+    }
+    nav, nav ul{
+        width: 15%;
+    }
+    nav ul i{
+        font-size: 20px;
+    }
+    nav ul li{
+        font-size: 0px;
+    }
+    nav ul li:hover{
         display: flex;
-    }
-    .dropdown-box{
-        position: relative;
-        right: 125px;
-      }
-    nav{
         align-items: center;
+        justify-content: center;
+        background-color: #7DABCB;
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
     }
-    .dropbtn {
-    }
+
     
 
-    ul{
-        position: absolute;
-        width: 100%;
-        height: calc(100% - 70px);
-        background-color: var(--dark-blue);
-        backdrop-filter: blur(5px);
-        top: 100px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        flex-direction: column;
-        justify-content: center;
-        z-index: 10;
-        animation: desplegar 2s 1s backwards;
+}
+@media screen and (min-width:1024px) {
+    nav, nav ul{
+        width: 13%;
     }
-
-    @keyframes desplegar {
-        0%{
-            border-bottom-right-radius: 100%;
-        }
-        100%{
-            border-bottom-right-radius: 0%;
-        }
+}
+@media screen and (min-width:1024px) {
+    nav, nav ul{
+        width: 10%;
     }
-
-    nav ul li{
-        border: none;
-        width: 100%;
-        margin: 30px 0;
+    nav ul{
+        height: 32.3rem;
     }
-    nav ul li a{
-        width: 400px;
-    }
-    li a:hover, li a.active{
-        color: var(--yellow);
-        border-bottom: 2px solid var(--yellow);
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-
 }

@@ -12,35 +12,28 @@ function Menu() {
             <nav>
                 <Link to="/portfolio" className='item'>
                 <img class="logo" src={Logo} alt="Logo Portfolio" /></Link>
-                <input type="checkbox" id="check"></input>
+                <input type="checkbox" id="check" checked></input>
                 <label for="check" className="checkbtn">
                 <FontAwesomeIcon icon={faBars} />
                 </label>
                 <ul>
                     <li>
-                        <Link to="/home" className='item'><FontAwesomeIcon icon={faIgloo} /></Link>
+                        <Link to="/home" className='item'><i><FontAwesomeIcon icon={faIgloo} /> </i>About Me</Link>
                     </li>
 
                     <li>
-                    <div class="dropdown">
-                            <div className="dropbtn item"><FontAwesomeIcon icon={faHammer} /></div>
-                            <div className="dropdown-content">
-                                <div className='dropdown-box'>
-                                <Link to="/workus">Nuestro Trabajo</Link>
-                            <Link to="/projects">Prevención, Formación y asistencia</Link>
-                                </div>
-                            
-                            </div>
-                        </div>
+                        <Link to="" className='item'><i><FontAwesomeIcon icon={faHammer} /> </i>Projects</Link>
+                    
+                        
                     </li>
 
                     <li>
-                        <Link to="/us" className='item'><FontAwesomeIcon icon={faLaptopCode} />
+                        <Link to="/us" className='item'><i><FontAwesomeIcon icon={faLaptopCode} /></i> Skills
                         </Link>
                     </li>
                     
                     <li>
-                        <Link to="/contact" className='item'><FontAwesomeIcon icon={faGraduationCap} />
+                        <Link to="/contact" className='item'><i><FontAwesomeIcon icon={faGraduationCap} /></i> Studies
                     </Link>
                     </li>
 

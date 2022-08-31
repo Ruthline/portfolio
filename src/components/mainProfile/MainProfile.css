@@ -4,7 +4,7 @@
     height: 100vh;
 }
 .container-main{
-    background-color: #c3c8cd94;
+    background-color: #c3c8cd5e;
     height: 15rem;
     display: flex;
     flex-direction: column;
@@ -15,17 +15,18 @@
 }
 .container-main h2{
     font-family: 'Secular One', sans-serif;
-    color: var(--pine-three);
-    text-shadow: 1px 1px 3px var(--white);
+    color: var(--white);
+    text-shadow: 1px 1px 3px var(--pine-tree);
+    letter-spacing: 1.5px;
 }
 .paragraph{
-    width: 90%;
+    padding: 0.5rem 1rem 0.2rem 1rem;
 }
 .paragraph p{
     font-family: 'Baloo 2', cursive;
     text-align: center;
-    text-shadow: 1px 1px 3px var(--white);
-    color: var(--pine-three);
+    color: var(--white);
+    text-shadow: 1px 1px 3px var(--pine-tree);
 }
 
 @media screen and (min-width:768px) {
@@ -35,14 +36,17 @@
     }
     .container-main{
         position: absolute;
-        top: 38%;
+        top: 33%;
         left:27%;
         width: 60%;
         margin: 0;
-        height: 15rem;
+        height: 18rem;
         padding: 2rem;
         justify-content: center;
         border-radius: 5px;
+    }
+    .paragraph {
+        width: 80%;
     }
     .paragraph p{
         font-size: 20px;

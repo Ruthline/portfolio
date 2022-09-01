@@ -3,7 +3,7 @@ import './../mainProfile/MainProfile.css'
 
 function MainProfile() {
   return (
-    <main>
+    <main className='wall'>
         <div className='container-main'>
             <h2>About me</h2>
             <div className='paragraph'>

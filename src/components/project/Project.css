@@ -1,0 +1,74 @@
+.Projects{
+    background:var(--iceberg);
+    
+}
+
+.box-p{
+    padding: 1rem;
+    background-color: pink;
+}
+
+.list-projects{
+    background: var(--olive-draf);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.list-image{
+    width: 80%;
+    padding: 1.5rem;
+}
+.list-image img{
+    width: 100%;
+}
+   /* font-family: 'Secular One', sans-serif;
+font-family: 'Manrope', sans-serif;*/
+.list-titulo h3, .list-institucion h4{
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    color: var(--silver-sand);
+    text-shadow: 2px 2px 2px var(--pine-tree);
+
+}
+
+.list-frame p, .list-año p{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    color: var(--silver-sand);
+    text-shadow: 2px 2px 2px var(--pine-tree);
+}
+.btn-project{
+    background-color: var(--pine-tree);
+    padding: 1rem 2rem; 
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-project:hover, .btn-project a:hover{
+    background-color: var(--silver-sand);
+    color: var(--pine-tree);
+}
+.btn-project a{
+    text-decoration: none;
+    font-family: 'Secular One', sans-serif;
+    color: var(--white);
+}
+.btn-project i{
+    margin-left: 0.5rem;
+}
+
+@media screen and (min-width:768px) {
+    .box-p{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .list-projects{
+         max-width: 25%;
+    }
+}

@@ -1,17 +1,20 @@
 .Home{
     background:linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)), url(./background.jpeg);
     background-size: 600px 250px;
-    height: 40rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 .container-main{
     background-color: #c3c8cd5e;
     display: flex;
-    margin: 5rem 0rem 2rem 0rem;
     padding-top: 1rem;
+    margin: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    border-radius: 500px 500px 0px 0px;
+    border-radius: 50px 50px 0px 0px;
 }
 .container-main h2{
     font-family: 'Secular One', sans-serif;
@@ -37,19 +40,21 @@
     .Home{
         background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./background.jpeg);
         background-size: 1000px 100vh;
-        height: 100vh;
+        
+    }
+    .wall{
+        position: relative;
+        top:0;
+        display: flex;
+        justify-content: flex-end;
     }
     .container-main{
         background-image: linear-gradient(90deg, #c3c8cdc4 0px, rgb(229 229 229/ 90%) 40px, #c3c8cdc4  80px);
         background-size: 300%;
         background-position: 100% 0;
         animation: shimer 6s infinite;
-        position: absolute;
-        padding: 1rem;
-        top: 20%;
-        left:19%;
+        align-items: center;
         width: 70%;
-        justify-content: center;
         border-radius: 15px;
     }
     @keyframes shimer {
@@ -82,10 +87,6 @@
     
     .container-main{
         background-color: #c3c8cd80;
-        position: absolute;
-        top: 30%;
-        left:10%;
-        width: 65%;
         padding: 1rem 2rem 1rem 0rem;
         justify-content: center;
         border-radius: 0px 100px 80px 0px;

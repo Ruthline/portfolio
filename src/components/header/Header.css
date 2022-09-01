@@ -1,11 +1,9 @@
 .head{
     background-color: var(--olive-draf);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 11rem;
-    padding-top: 1rem;
     border-radius: 0px 0px 50px 50px ;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 .titles{
     text-align: center;
@@ -21,47 +19,48 @@
     color: var(--white);
 }
 .myPicture{
+    background-color: var(--pine-tree);
     display: flex;
     align-items: center;
     justify-content:center ;
-    position: absolute;
-    top: 34%;
     border-radius: 100%; 
-    width: 130px;
-    height: 130px;
-    background-color: var(--pine-tree);
+    width: 110px;
+    height: 110px;
+    
 }
 .myPicture img{
     border-radius: 100%; 
     
     border: 5px solid var(--white);
-    width:130px;
+    width:110px;
 }
 
 @media screen and (min-width:768px) {
-    .head{  
-    position: absolute;
-    top:0 ;
-    right: 0;
-    width: 85%;
-    align-items:center;
-    padding-right: 8rem;
-    padding-top: 3rem;
-    }
-    .myPicture{
-        top: 9%;
-        right: 15%;
-    }
+    .head{
+        position: absolute;
+        right: 0;
+        width: 85%;
+        justify-content: space-around;
+        align-items:center;
+        }
 }
 @media screen and (min-width:1024px) {
     .head{  
-    width: 90%;
-    padding-right: 0rem;
-    }
+        width: 90%;
+        padding-right: 0rem;
+        justify-content: center;
+        }
+        .titles{
+            margin: 1rem;
+            padding-right: 5rem;
+        }
     .myPicture{
-        top: 38%;
-        width: 200px;
         height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 30%;
+        right: 15%;
+
     }
     .myPicture img{
         width:200px;

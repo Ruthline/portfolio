@@ -3,9 +3,7 @@
 
 nav{
     background: var(--pine-tree);
-    padding: 2rem;
-    height: 100px;
-    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid var(--olive-draf);
@@ -17,22 +15,18 @@ nav{
     width: 60px;
     transition-duration:500ms;
 }
-
-nav ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 31.7rem;
-    width: 100%;
-
+.appear{
+    display: none;
 }
-
 nav ul li{
     font-family: 'Secular One', sans-serif;
     color:var(--silver-sand);
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 3.18rem;
+    border: none;
+    width: 100%;
 }
 nav ul a{
     text-decoration: none;
@@ -100,10 +94,6 @@ ul{
     }
 }
 
-nav ul li{
-    border: none;
-    width: 100%;
-}
 li a:hover, li a.active{
     color: var(--yellow);
     border-bottom: 2px solid var(--yellow);
@@ -115,6 +105,10 @@ li a:hover, li a.active{
 
 /* MEDIAS QUERIES */
 @media screen and (min-width:768px) {
+    nav{
+        align-items: center;
+        width: 100px;
+    }
     .checkbtn{
         display: none;
     }
@@ -125,6 +119,7 @@ li a:hover, li a.active{
         font-size: 20px;
     }
     nav ul li{
+        padding: 2.99rem 1rem;
         font-size: 0px;
     }
     nav ul li:hover{
@@ -132,9 +127,8 @@ li a:hover, li a.active{
         align-items: center;
         justify-content: center;
         background-color: #7DABCB;
-        width: 200px;
-        height: 100px;
         font-size: 20px;
+        width: 200px;
     }
     #check ~ ul{
         left:0px;
@@ -146,14 +140,14 @@ li a:hover, li a.active{
     nav, nav ul{
         width: 13%;
     }
-    
+    nav ul li{
+        padding: 3.13rem 1rem;
+        font-size: 0px;
+    }
     
 }
 @media screen and (min-width:1024px) {
     nav, nav ul{
         width: 10%;
-    }
-    nav ul{
-        height: 32.3rem;
     }
 }

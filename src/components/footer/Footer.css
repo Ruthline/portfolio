@@ -1,7 +1,4 @@
 .footer{
-    position: absolute;
-    width: 100%;
-    /*bottom: 0;*/
     background-color: var(--olive-draf);
     display: flex;
     justify-content: space-between;
@@ -23,17 +20,4 @@
 
 .footer i:hover{
     color: var(--pine-tree);
-}
-@media screen and (min-width:768px) {
-    .footer{
-        width: 85%;
-        bottom: 0;
-        right: 0;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .footer{
-        width: 90%;
-    }
 }

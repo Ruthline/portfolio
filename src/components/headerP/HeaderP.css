@@ -1,0 +1,32 @@
+.headP{
+    background-color: var(--olive-draf);
+    border-radius: 0px 0px 50px 50px ;
+    padding: 2rem;
+}
+.titlesP{
+    text-align: center;
+}
+.headP h1{
+    font-family: 'Secular One', sans-serif;
+    color: var(--white);
+    text-shadow: 2px 2px 3px var(--pine-tree);
+}
+
+
+@media screen and (min-width:768px) {
+    .headP{  
+    position: absolute;
+    top:0 ;
+    right: 0;
+    width: 85%;
+    align-items:center;
+    padding-right: 8rem;
+    padding-top: 3rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .headP{  
+    width: 90%;
+    padding-right: 0rem;
+    }
+}

@@ -12,12 +12,12 @@ function Footer() {
             </div>
 
             <div className='social'>
-                <a href="https://github.com/Ruthline">
+                <a href="https://github.com/Ruthline" target="_blank">
                     <i><FontAwesomeIcon icon={faGithub} /> </i>
                 </a>
-                <a href='mailto:rutheveline@hotmail.es'> <i><FontAwesomeIcon icon={faEnvelope}/></i></a>
+                <a href='mailto:rutheveline@hotmail.es' target="_blank"> <i><FontAwesomeIcon icon={faEnvelope}/></i></a>
 
-                <a href="https://www.linkedin.com/in/ruth-rodriguez-82744a222/"><i><FontAwesomeIcon icon={faLinkedinIn} /> </i></a>
+                <a href="https://www.linkedin.com/in/ruth-rodriguez-82744a222/" target="_blank"><i><FontAwesomeIcon icon={faLinkedinIn} /> </i></a>
             
             </div>
         </footer>

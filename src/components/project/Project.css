@@ -1,15 +1,17 @@
 .Projects{
-    background: linear-gradient(-45deg, var(--iceberg), var(--silver-sand), #86cee9, #86c2b4);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)), url("https://images.unsplash.com/photo-1473081556163-2a17de81fc97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQwfHxuYXR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-size: 150% 100%;
 }
 
 .box-p{
     padding: 1rem;
+    justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
 }
 
 .list-projects{
-    background: var(--olive-draf);
+    background: #47432ec0;
     margin: 1rem;
     padding: 1rem;
     border-radius: 30px 0px 30px 0px;
@@ -62,30 +64,38 @@ font-family: 'Manrope', sans-serif;*/
 }
 
 @media screen and (min-width:768px) {
+    .Projects{
+        background-size: 150% 160%;
+    }
     .box-p{
         padding-top: 8rem;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        height: 60rem;
+        padding-left: 9rem;
+        height: 80rem;
     }
     
     .list-projects{
-        width: 180px;
+        width: 250px;
         height: 350px;
     }
     
 }
 @media screen and (min-width:1024px){
+    .Projects{
+        background-size: 100% 120%;
+    }
     .box-p{
+        padding-left: 7rem;
+        height: 60rem;
     }
     .list-projects{
-        width: 280px;
+        width: 250px;
     }
 }
 @media screen and (min-width:1200px) {
     .list-projects{
         width: 320px;
+    }
+    .box-p{
+        padding-left: 9rem;
     }
 }

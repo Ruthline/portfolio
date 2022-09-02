@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 .wall{
-    height: 15.8rem;
+    height: 17rem;
 
 }
 .container-main{
@@ -51,7 +51,7 @@
         top:0;
         display: flex;
         justify-content: flex-end;
-        height: 32rem;
+        height: 33rem;
     }
     .container-main{
         background: linear-gradient(-45deg,#49452e, #232314ce,#242413ce,#49452e, #252315ce, #242413ce, #49452e);

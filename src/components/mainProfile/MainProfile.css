@@ -5,7 +5,10 @@
     display: flex;
     flex-direction: column;
 }
+.wall{
+    height: 15.8rem;
 
+}
 .container-main{
     background-color: #c3c8cd5e;
     display: flex;
@@ -44,38 +47,41 @@
     }
     .wall{
         position: relative;
+        padding-top: 5rem;
         top:0;
         display: flex;
         justify-content: flex-end;
+        height: 32rem;
     }
     .container-main{
-        background-image: linear-gradient(90deg, #c3c8cdc4 0px, rgb(229 229 229/ 90%) 40px, #c3c8cdc4  80px);
-        background-size: 300%;
-        background-position: 100% 0;
-        animation: shimer 6s infinite;
-        align-items: center;
+        background: linear-gradient(-45deg,#49452e, #232314ce,#242413ce,#49452e, #252315ce, #242413ce, #49452e);
+        background-size: 400% 400%;
+        animation: gradient 25s ease infinite;
+        margin-top: 8rem;
+        margin-right: 6rem;
+        padding: 1rem;
         width: 70%;
         border-radius: 15px;
+        height: 60%;
     }
-    @keyframes shimer {
-        to{
-            background-position: -100% 0;
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
         }
-    }
-    .container-main:hover{
-        background-image: linear-gradient(90deg, #232314 0px, rgb(229 229 229/ 90%) 40px, #232314  600px);
-        background-size: 300%;
-        background-position: 100% 0;
-        animation: shimer 4s infinite;
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
     .container-main h2{
         color: var(--white);
             text-shadow: 1px 1px 3px var(--pine-tree);
         }
     .paragraph {
-        
-        background-color: #232314be;
-        padding: 2rem;
+        background-color: #47432e9c;
+        padding: 2rem 2rem 2rem 3rem;
         border-radius: 10px;
     }
     .paragraph p{
@@ -84,8 +90,13 @@
 }
 
 @media screen and (min-width:1024px) {
-    
+    .wall{
+        height: 34rem;
+    }
     .container-main{
+        position: relative;
+        right: 13%;
+        margin-top: 6rem;
         background-color: #c3c8cd80;
         padding: 1rem 2rem 1rem 0rem;
         justify-content: center;

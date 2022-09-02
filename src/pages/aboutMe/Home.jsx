@@ -9,6 +9,8 @@ function Home() {
     <div className='Home'>
         <Menu/>
         <Header/>
+        <MainProfile/>
+        <Footer/>
     </div>
   )
 }

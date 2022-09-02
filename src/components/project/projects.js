@@ -2,7 +2,6 @@
 let projects=[
     {
         id:1,
-        institucion:"Fundación Soy Luz de Vida",
         framework: "React, CSS, HTML y Javascript",
         añoFin:"2022",
         titulo:"Práctica con Organización social",
@@ -11,7 +10,6 @@ let projects=[
     },
     {
         id:2,
-        institucion:"Colegio San Patricio",
         framework: "React, CSS, HTML y Javascript",
         añoFin:"2022",
         titulo:"Práctica Teorica",
@@ -22,7 +20,6 @@ let projects=[
     },
     {
         id:3,
-        institucion:"Forja",
         framework: " CSS, HTML y Javascript",
         añoFin:"2022",
         titulo:"Proyectos Kuepa (Ejercicios)",
@@ -32,7 +29,6 @@ let projects=[
     },
     {
         id:4,
-        institucion:"Animalandia",
         framework: "Boostrap",
         añoFin:"2022",
         titulo:"Proyectos Kuepa (Ejercicios)",
@@ -41,7 +37,6 @@ let projects=[
     },
     {
         id:5,
-        institucion:"Adoptino",
         framework: "Vuejs y Java",
         añoFin:"2021",
         titulo:"App móvil MinTic (Ejercicios)",

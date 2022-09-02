@@ -82,16 +82,6 @@ ul{
     text-align: center;
     transition: all .5s;
     z-index: 10;
-    animation: desplegar 2s 1s backwards;
-}
-
-@keyframes desplegar {
-    0%{
-        border-bottom-right-radius: 100%;
-    }
-    100%{
-        border-bottom-right-radius: 0%;
-    }
 }
 
 li a:hover, li a.active{
@@ -108,11 +98,15 @@ li a:hover, li a.active{
     nav{
         align-items: center;
         width: 100px;
+        
+        
     }
     .checkbtn{
         display: none;
     }
     nav, nav ul{
+        position: fixed;
+        z-index: 4;
         width: 15%;
     }
     nav ul i{

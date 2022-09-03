@@ -1,0 +1,75 @@
+.Study{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)), url("https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: 150% 100%;
+}
+
+.box-e{
+    padding: 1rem;
+    justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.list-study{
+    background: #47432ec0;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+   /* font-family: 'Secular One', sans-serif;
+font-family: 'Manrope', sans-serif;*/
+.list-ie h3, .list-type h4{
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    color: var(--silver-sand);
+    text-shadow: 2px 2px 2px var(--pine-tree);
+
+}
+
+.list-institute p, .list-year p{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    color: var(--silver-sand);
+    text-shadow: 2px 2px 2px var(--pine-tree);
+}
+
+@media screen and (min-width:768px) {
+    .Study{
+        background-size: 150% 160%;
+    }
+    .box-e{
+        padding-top: 8rem;
+        padding-left: 9rem;
+        height: 60rem;
+    }
+    
+    .list-study{
+        width: 250px;
+        height: 240px;
+    }
+    
+}
+@media screen and (min-width:1024px){
+    .Study{
+        background-size: 100% 120%;
+    }
+    .box-e{
+        padding-left: 7rem;
+        height: 45rem;
+    }
+    .list-study{
+        width: 250px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .list-study{
+        width: 300px;
+    }
+    .box-e{
+        padding-left: 9rem;
+    }
+}
